@@ -9,12 +9,13 @@
 
 html {
     font-size: 62.5%;
-    /* margin: 0 165px; */
+    scroll-behavior: smooth;
 }
 
 body {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /*--------Common-----------  */
@@ -54,13 +55,7 @@ a {
     z-index: 1;
 }
 
-.header {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: #e6f0ff;
-    height: 100vh;
-}
+
 
 .navbar {
     display: flex;
@@ -103,16 +98,12 @@ a {
 }
 
 /* =========hero======== */
-.hero {
 
-    margin-top: 130px;
-}
-
-.hero .info {
+.hero-wrap .info {
     width: 51%;
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.5;
@@ -120,7 +111,7 @@ a {
     color: #687690;
 }
 
-.hero .title {
+.hero-wrap .title {
     margin-top: 8px;
     font-weight: 700;
     font-size: 6.4rem;
@@ -128,7 +119,7 @@ a {
     color: #000336;
 }
 
-.hero .desc {
+.hero-wrap .desc {
     margin-top: 30px;
     font-weight: 400;
     font-size: 1.8rem;
@@ -146,6 +137,16 @@ a {
     position: absolute;
     right: calc((100vw - 1110px) / 2 - 100px);
     bottom: 0;
+}
+
+.hero-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e6f0ff;
+    height: 100vh;
+
 }
 
 /* ===========Clients============ */
